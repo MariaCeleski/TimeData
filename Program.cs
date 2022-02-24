@@ -24,6 +24,14 @@ namespace TimeData
             //"{0:u}" = short datetime = formato json
 
             Console.WriteLine(formatada);
+
+            Console.WriteLine("--------------------");
+
+            var dateTe = DateTime.Now;
+            Console.WriteLine(dateTe);
+            Console.WriteLine(dateTe.AddDays(-12));
+            Console.WriteLine(dateTe.AddMonths(1));
+            Console.WriteLine(dateTe.AddHours(1));
         }
     }
 
