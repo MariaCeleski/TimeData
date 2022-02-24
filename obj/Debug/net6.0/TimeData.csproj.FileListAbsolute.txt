@@ -1,0 +1,15 @@
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\bin\Debug\net6.0\TimeData.exe
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\bin\Debug\net6.0\TimeData.deps.json
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\bin\Debug\net6.0\TimeData.runtimeconfig.json
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\bin\Debug\net6.0\TimeData.dll
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\bin\Debug\net6.0\TimeData.pdb
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\TimeData.csproj.AssemblyReference.cache
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\TimeData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\TimeData.AssemblyInfoInputs.cache
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\TimeData.AssemblyInfo.cs
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\TimeData.csproj.CoreCompileInputs.cache
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\TimeData.dll
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\refint\TimeData.dll
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\TimeData.pdb
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\TimeData.genruntimeconfig.cache
+C:\Users\Tuca\Nova pasta\workspace\Balta.io\TimeData\obj\Debug\net6.0\ref\TimeData.dll
