@@ -68,7 +68,32 @@ namespace TimeData
                 Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(UtcNowTime, timezone));
                 Console.WriteLine("-------------");
             }
+
+            //Timespan = 
+            var timeSpan = new TimeSpan();
+            Console.WriteLine(timeSpan);
+
+            var timeSpanNanosegundos = new TimeSpan(1);
+            Console.WriteLine(timeSpanNanosegundos);
+
+            var timeSpanMinutosegundo = new TimeSpan(5, 12, 8);
+            Console.WriteLine(timeSpanMinutosegundo);
+
+            var timeSpanHoraMinutoSegundo = new TimeSpan(5, 50, 10);
+            Console.WriteLine(timeSpanHoraMinutoSegundo);
+
+            var timeSpanDiaHoraMinutoSegundo = new TimeSpan(3, 5, 50, 10);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo);
+
+            var timeSpanDiaHoraMinutoSegundoMilisegundo = new TimeSpan(15, 12, 55, 8, 100);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundoMilisegundo);
+
+            //exemplos de onde é usado o timespan
+            Console.WriteLine(timeSpanHoraMinutoSegundo - timeSpanDiaHoraMinutoSegundo);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Days);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Add(new TimeSpan(12, 0, 0)));
         }
+
     }
 
 
