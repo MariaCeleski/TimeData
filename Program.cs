@@ -39,7 +39,7 @@ namespace TimeData
                 Console.WriteLine("É igual");
             Console.WriteLine(data);
 
-            //globalização de horas
+            //globalização de horas - CultureInfo pega o local do servidor que está rodando
             //pode usar somente o CultureInfo e dar crtl + . e chamar o using
             var pt = new System.Globalization.CultureInfo("pt-PT");
             var br = new System.Globalization.CultureInfo("pt-BR");
@@ -49,6 +49,25 @@ namespace TimeData
             Console.WriteLine(DateTime.Now.ToString("D", atual));//ou
             Console.WriteLine(string.Format("{0:D}", DateTime.Now));//ou
 
+            var UtcNowTime = DateTime.UtcNow;
+            Console.WriteLine(UtcNowTime.ToLocalTime());
+
+            //exemplo se o usuario estiver na australia
+            var timezoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
+            Console.WriteLine(timezoneAustralia);
+
+            var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(UtcNowTime, timezoneAustralia);
+            Console.WriteLine(horaAustralia);
+
+            //para listar todas as timezones
+            var timezones = TimeZoneInfo.GetSystemTimeZones();
+            foreach (var timezone in timezones)
+            {
+                Console.WriteLine(timezone.Id);
+                Console.WriteLine(timezone);
+                Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(UtcNowTime, timezone));
+                Console.WriteLine("-------------");
+            }
         }
     }
 
