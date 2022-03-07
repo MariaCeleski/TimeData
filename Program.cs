@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Globalization;
+using System;
 
 namespace TimeData
 {
@@ -32,6 +33,22 @@ namespace TimeData
             Console.WriteLine(dateTe.AddDays(-12));
             Console.WriteLine(dateTe.AddMonths(1));
             Console.WriteLine(dateTe.AddHours(1));
+
+            //Comparando datas - se puxar as horas podem dar conflitos 
+            if (data.Date > DateTime.Now.Date) //então chama somente a data DateTime.Now.Date
+                Console.WriteLine("É igual");
+            Console.WriteLine(data);
+
+            //globalização de horas
+            //pode usar somente o CultureInfo e dar crtl + . e chamar o using
+            var pt = new System.Globalization.CultureInfo("pt-PT");
+            var br = new System.Globalization.CultureInfo("pt-BR");
+            var en = new System.Globalization.CultureInfo("en-US");
+            var de = new System.Globalization.CultureInfo("de-DE");
+            var atual = CultureInfo.CurrentCulture;
+            Console.WriteLine(DateTime.Now.ToString("D", atual));//ou
+            Console.WriteLine(string.Format("{0:D}", DateTime.Now));//ou
+
         }
     }
 
