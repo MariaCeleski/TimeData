@@ -92,7 +92,14 @@ namespace TimeData
             Console.WriteLine(timeSpanHoraMinutoSegundo - timeSpanDiaHoraMinutoSegundo);
             Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Days);
             Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Add(new TimeSpan(12, 0, 0)));
+
+            Console.WriteLine(DateTime.DaysInMonth(2022, 3));
+            Console.WriteLine(IsWeekend(DateTime.Now.DayOfWeek));
+            Console.WriteLine(DateTime.Now.IsDaylightSavingTime());
+
         }
+
+        static bool IsWeekend(DayOfWeek today) => today == DayOfWeek.Saturday || today == DayOfWeek.Sunday;
 
     }
 
